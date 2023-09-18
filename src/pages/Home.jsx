@@ -5,12 +5,16 @@ export default function Home() {
   return (
     <>
       <main id="start">
-        <Section className="bg-zinc-900/50 text-zinc-100 h-[80vh] max-lg:h-auto">
+        <Section className="bg-zinc-900/50 text-zinc-100 h-[80vh]  ">
           <header
             className="flex justify-between items-center 
           bg-transparent h-20 "
           >
-            <span>logo</span>
+            <img
+              src="/imgs/logo.png"
+              className="h-60 -translate-x-[20%] translate-y-4"
+              alt="logo do site"
+            />
             <nav className="flex gap-4 items-center">
               <Link to="/hungerMap" className="text-sm">
                 MAPA
