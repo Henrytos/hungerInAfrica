@@ -1,7 +1,15 @@
+import Section from "../components/Section";
+
 export default function HungerMap() {
   return (
     <>
-      <h1>fome do mundo</h1>
+      <main className="w-[100vw] h-[100vh]">
+        <iframe
+          src="https://hungermap.wfp.org/"
+          frameborder="0"
+          className="w-full h-full"
+        ></iframe>
+      </main>
     </>
   );
 }

@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#start {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../public/imgs/bg-start.jpg");
+  background-position: center;
+}
