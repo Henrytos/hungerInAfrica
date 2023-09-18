@@ -4,7 +4,34 @@
 html {
   scroll-behavior: smooth;
 }
-
+#linkMap {
+  color: white;
+  text-decoration: none;
+}
+#btnStart {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+#btnStart:hover {
+  color: black;
+}
+#btnGalery {
+  color: #485342;
+  text-decoration: none;
+  cursor: pointer;
+}
+#btnGalery:hover {
+  color: #c7cec9;
+}
+#btnCausas {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+#btnCausas:hover {
+  color: #485342;
+}
 #start {
   background-repeat: no-repeat;
   background-size: cover;

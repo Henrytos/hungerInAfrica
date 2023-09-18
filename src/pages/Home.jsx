@@ -1,7 +1,16 @@
 import { Link } from "react-router-dom";
 import Section from "../components/Section";
 
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 export default function Home() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
       <main id="start">
@@ -11,12 +20,12 @@ export default function Home() {
           bg-transparent h-20 "
           >
             <img
-              src="/imgs/logo.png"
-              className="h-60 -translate-x-[20%] translate-y-4"
+              src="/imgs/logoNV.png"
+              className="h-full -translate-x-[10%] translate-y-4"
               alt="logo do site"
             />
             <nav className="flex gap-4 items-center">
-              <Link to="/hungerMap" className="text-sm">
+              <Link to="/hungerMap" className="text-sm" id="linkMap">
                 MAPA
               </Link>
               <select
@@ -44,6 +53,8 @@ export default function Home() {
           py-3 border-2 border-zinc-100  rounded-lg
           hover:bg-zinc-100 hover:text-zinc-900 transition-colors
           "
+              to="/hungerMap"
+              id="btnStart"
             >
               VER MAPA
             </Link>
@@ -74,6 +85,7 @@ export default function Home() {
               trabalhar.
             </span>
             <a
+              id="btnCausas"
               href="#otherCauses"
               className="text-center  max-w-[8rem] text-sm
           py-3 border-2 border-zinc-100  rounded-lg
@@ -101,7 +113,8 @@ export default function Home() {
             />
             <span className="text-center text-2xl ">Processo Colonial</span>
             <a
-              href="#otherCauses"
+              id="btnGalery"
+              onClick={handleShow}
               className="text-center block m-auto  min-w-[8rem] text-sm
           py-3 border-2 border-[#485342]  rounded-lg
           hover:bg-[#485342] hover:text-[#c7cec9] transition-colors
@@ -121,7 +134,8 @@ export default function Home() {
               As Condições Climáticas
             </span>
             <a
-              href="#otherCauses"
+              id="btnGalery"
+              onClick={handleShow}
               className="text-center block m-auto  min-w-[8rem] text-sm
           py-3 border-2 border-[#485342]  rounded-lg
           hover:bg-[#485342] hover:text-[#c7cec9] transition-colors
@@ -140,7 +154,8 @@ export default function Home() {
               A Concetração De Poder
             </span>
             <a
-              href="#otherCauses"
+              id="btnGalery"
+              onClick={handleShow}
               className="text-center block m-auto  min-w-[8rem] text-sm
           py-3 border-2 border-[#485342]  rounded-lg
           hover:bg-[#485342] hover:text-[#c7cec9] transition-colors
@@ -161,7 +176,8 @@ export default function Home() {
               Autoridades
             </span>
             <a
-              href="#otherCauses"
+              id="btnGalery"
+              onClick={handleShow}
               className="text-center block m-auto  min-w-[8rem] text-sm
           py-3 border-2 border-[#485342]  rounded-lg
           hover:bg-[#485342] hover:text-[#c7cec9] transition-colors
@@ -179,7 +195,8 @@ export default function Home() {
               A Baixa Produtividade <br /> Agrícola
             </span>
             <a
-              href="#otherCauses"
+              id="btnGalery"
+              onClick={handleShow}
               className="text-center block m-auto  min-w-[8rem] text-sm
           py-3 border-2 border-[#485342]  rounded-lg
           hover:bg-[#485342] hover:text-[#c7cec9] transition-colors
@@ -199,7 +216,8 @@ export default function Home() {
             </span>
 
             <a
-              href="#otherCauses"
+              id="btnGalery"
+              onClick={handleShow}
               className="text-center block m-auto  min-w-[8rem] text-sm
           py-3 border-2 border-[#485342]  rounded-lg
           hover:bg-[#485342] hover:text-[#c7cec9] transition-colors
@@ -235,6 +253,21 @@ export default function Home() {
       <footer className="bg-[#c7cec9] text-zinc-950 py-4 text-center">
         Feito com Amor Pelo 2-DS &copy; 2023
       </footer>
+
+      <Modal show={show} onHide={handleClose} animation={false}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </>
   );
 }
