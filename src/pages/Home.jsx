@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <main id="start">
-        <Section className="bg-zinc-900/50 text-zinc-100 h-[80vh]">
+        <Section className="bg-zinc-900/50 text-zinc-100 h-[80vh] max-lg:h-auto">
           <header
             className="flex justify-between items-center 
           bg-transparent h-20 "
@@ -25,7 +25,7 @@ export default function Home() {
             </nav>
           </header>
 
-          <main className="flex flex-col  gap-10 py-[20%]">
+          <main className=" h-full flex flex-col  gap-10 justify-center ">
             <span className="font-medium text-5xl max-sm:text-4xl">
               FOME NA ÁFRICA
             </span>
@@ -48,13 +48,13 @@ export default function Home() {
       </main>
 
       <Section className="bg-[#485342] text-zinc-50">
-        <div className="flex gap-10 items-center h-[60vh] max-lg:flex-col max-lg:py-4 max-lg:h-[100vh]">
+        <div className="flex gap-10 items-center h-[60vh] max-lg:flex-col max-lg:py-4 max-lg:h-auto">
           <img
             src="https://images.unsplash.com/photo-1543180930-261980d4868a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1356&q=80"
             alt=""
-            className="h-full w-[50%] object-cover max-lg:w-auto"
+            className="h-full w-[50%] object-cover max-lg:w-[80%] max-sm:w-[100%]"
           />
-          <div className="w-full max-w-sm text-base flex flex-col  gap-4">
+          <div className="w-full max-w-sm text-base flex flex-col  gap-4 ">
             <span className="text-4xl font-semibold">CAUSAS:</span>
             <span>
               Na África, a falta de comida resulta de vários fatores como o
@@ -224,7 +224,7 @@ export default function Home() {
           <img
             src="/imgs/mulherAfricana.jpg"
             alt=""
-            className="h-full w-[50%] object-cover max-lg:w-auto"
+            className="h-full w-[50%] object-cover max-lg:w-[80%] max-sm:w-[100%]"
           />
         </div>
       </Section>
