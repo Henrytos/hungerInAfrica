@@ -1,10 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
 
 #start {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../public/imgs/bg-start.jpg");
+  background-image: url("../public/imgs/bg-home.jpg");
   background-position: center;
 }
