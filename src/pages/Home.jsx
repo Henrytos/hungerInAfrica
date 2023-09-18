@@ -91,9 +91,9 @@ export default function Home() {
         <main className="grid grid-cols-3 gap-x-4 gap-y-8 max-lg:grid-cols-2 max-sm:grid-cols-1">
           <div className="flex flex-col  gap-4">
             <img
-              src="https://www.coladaweb.com/wp-content/uploads/2018/02/20180227-colonizacao-africa.jpg"
+              src="/imgs/colonizacao-africa.jpg"
               alt="image do processo colonial"
-              className="w-full max-w-xs max-sm:block max-sm:m-auto object-cover"
+              className="w-full max-w-xs max-sm:block max-sm:m-auto object-cover  h-[80%] max-h-72"
             />
             <span className="text-center text-2xl ">Processo Colonial</span>
             <a
@@ -106,30 +106,12 @@ export default function Home() {
               VER MAIS
             </a>
           </div>
+
           <div className="flex flex-col  gap-4">
             <img
-              src="https://www.coladaweb.com/wp-content/uploads/2018/02/20180227-colonizacao-africa.jpg"
+              src="/imgs/condicoeCLimaticas.jpg"
               alt="image do processo colonial"
-              className="w-full max-w-xs max-sm:block max-sm:m-auto object-cover"
-            />
-            <span className="text-center text-2xl ">
-              A Concetração De Poder
-            </span>
-            <a
-              href="#otherCauses"
-              className="text-center block m-auto  min-w-[8rem] text-sm
-          py-3 border-2 border-[#485342]  rounded-lg
-          hover:bg-[#485342] hover:text-[#c7cec9] transition-colors
-          "
-            >
-              VER MAIS
-            </a>
-          </div>
-          <div className="flex flex-col  gap-4">
-            <img
-              src="https://www.coladaweb.com/wp-content/uploads/2018/02/20180227-colonizacao-africa.jpg"
-              alt="image do processo colonial"
-              className="w-full max-w-xs max-sm:block max-sm:m-auto object-cover"
+              className="w-full max-w-xs max-sm:block max-sm:m-auto object-cover h-[80%] max-h-72"
             />
             <span className="text-center text-2xl ">
               As Condições Climáticas
@@ -146,9 +128,28 @@ export default function Home() {
           </div>
           <div className="flex flex-col  gap-4">
             <img
-              src="https://www.coladaweb.com/wp-content/uploads/2018/02/20180227-colonizacao-africa.jpg"
+              src="/imgs/cdp.jpg"
               alt="image do processo colonial"
-              className="w-full max-w-xs max-sm:block max-sm:m-auto object-cover"
+              className="w-full max-w-xs max-sm:block max-sm:m-auto h-72 object-cover"
+            />
+            <span className="text-center text-2xl ">
+              A Concetração De Poder
+            </span>
+            <a
+              href="#otherCauses"
+              className="text-center block m-auto  min-w-[8rem] text-sm
+          py-3 border-2 border-[#485342]  rounded-lg
+          hover:bg-[#485342] hover:text-[#c7cec9] transition-colors
+          "
+            >
+              VER MAIS
+            </a>
+          </div>
+          <div className="flex flex-col  gap-4">
+            <img
+              src="/imgs/corrupcaoNaAfrica.jpg"
+              alt="image do processo colonial"
+              className="w-full max-w-xs max-sm:block max-sm:m-auto object-cover h-72"
             />
             <span className="text-center text-2xl ">
               A Corrupção Das
@@ -167,9 +168,8 @@ export default function Home() {
           </div>
           <div className="flex flex-col  gap-4">
             <img
-              src="https://www.coladaweb.com/wp-content/uploads/2018/02/20180227-colonizacao-africa.jpg"
-              alt="image do processo colonial"
-              className="w-full max-w-xs max-sm:block max-sm:m-auto object-cover"
+              src="/imgs/agricultura na africa.avif"
+              className="w-full max-w-xs max-sm:block max-sm:m-auto object-cover h-72"
             />
             <span className="text-center text-2xl ">
               A Baixa Produtividade <br /> Agrícola
@@ -186,9 +186,9 @@ export default function Home() {
           </div>
           <div className="flex flex-col  gap-4">
             <img
-              src="https://www.coladaweb.com/wp-content/uploads/2018/02/20180227-colonizacao-africa.jpg"
+              src="/imgs/aumentoPolicional.jpg"
               alt="image do processo colonial"
-              className="w-full max-w-xs max-sm:block max-sm:m-auto object-cover"
+              className="w-full max-w-xs max-sm:block max-sm:m-auto object-cover h-72"
             />
             <span className="text-center text-2xl ">
               O Aumento <br /> Populacional
@@ -206,6 +206,31 @@ export default function Home() {
           </div>
         </main>
       </Section>
+      <Section className="bg-[#485342] text-zinc-50">
+        <div className="flex gap-10 items-center h-[60vh] max-lg:flex-col max-lg:py-4 max-lg:h-[100vh]">
+          <div className="w-full max-w-sm text-base flex flex-col  gap-4">
+            <span className="text-4xl font-semibold">SOLUÇÕES:</span>
+            <span>
+              Uma administração correta, incentivo à agricultura familiar e a
+              universalização do alimento se tornam fatores primordiais. As
+              condições atuais de distribuição de terras e governos com
+              conflitos étnicos impedem esse desenvolvimento. Pois além das
+              ONG’s, o Estado precisa engajar e investir nas rendas familiares,
+              desfrutar da matéria-prima do continente, ou seja, petróleo e
+              minérios, como são valiosos, poderiam pegar o a monetização da
+              exportação e investir para reconstrução do país.
+            </span>
+          </div>
+          <img
+            src="/imgs/mulherAfricana.jpg"
+            alt=""
+            className="h-full w-[50%] object-cover max-lg:w-auto"
+          />
+        </div>
+      </Section>
+      <footer className="bg-[#c7cec9] text-zinc-950 py-4 text-center">
+        Feito com Amor Pelo 2-DS &copy; 2023
+      </footer>
     </>
   );
 }
