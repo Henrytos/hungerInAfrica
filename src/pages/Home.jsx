@@ -74,7 +74,7 @@ export default function Home() {
           bg-transparent h-20 "
           >
             <img
-              src="/imgs/logoNV.png"
+              src="/imgs/logoTipo.png"
               className="h-full -translate-x-[10%] translate-y-4"
               alt="logo do site"
             />
