@@ -261,7 +261,7 @@ export default function Home() {
       </Section>
       <Section className="bg-[#485342] text-zinc-50">
         <div className="flex  justify-center gap-10 items-center h-[60vh] max-lg:flex-col max-lg:py-4 max-lg:h-[100vh]">
-          <div className="w-full max-w-sm text-base flex flex-col  gap-4 max-lg:max-w-[80%] max-sm:max-w-full">
+          <div className="w-full max-w-sm text-base flex flex-col  gap-4 max-lg:max-w-[80%] max-sm:max-w-full ">
             <span className="text-4xl font-semibold">SOLUÇÕES:</span>
             <span>
               Uma administração correta, incentivo à agricultura familiar e a
@@ -285,32 +285,32 @@ export default function Home() {
         <span className="text-4xl font-semibold uppercase">
           Referências Bibliográficas: <hr />
         </span>
-        <span>
+        <div>
           <Bold>MUNDO EDUCAÇÃO</Bold>. As Principais Causas da Fome na África.
           Mundo Educação. Disponível em:
           <LinkFromPage>
             https://mundoeducacao.uol.com.br/geografia/as-principais-causas-fome-na-africa.htm.
           </LinkFromPage>
           Acesso em: 19 set. 2023.
-        </span>
+        </div>
 
-        <span>
+        <div>
           <Bold>TODA MATÉRIA</Bold>. Fome na África. Toda Matéria. Disponível
           em:{" "}
           <LinkFromPage>
             https://www.todamateria.com.br/fome-na-africa/
           </LinkFromPage>
           . Acesso em: 19 set. 2023.
-        </span>
-        <span>
+        </div>
+        <div>
           <Bold>BRASIL ESCOLA</Bold>. Conflitos na África. Brasil Escola.
           Disponível em:
           <LinkFromPage>
             https://brasilescola.uol.com.br/geografia/conflitos-na-africa.htm.
           </LinkFromPage>
           Acesso em: 19 set. 2023.
-        </span>
-        <span>
+        </div>
+        <div>
           <Bold>VALOR ECONÔMICO</Bold>. África pode perder até 15% do PIB por
           mudanças climáticas, diz Banco de Desenvolvimento. Valor Econômico.
           Disponível em:
@@ -318,19 +318,19 @@ export default function Home() {
             https://valor.globo.com/mundo/noticia/2022/09/13/africa-pode-perder-ate-15percent-do-pib-por-mudancas-climaticas-diz-banco-de-desenvolvimento.ghtml
           </LinkFromPage>
           Acesso em: 19 set. 2023.
-        </span>
-        <span>
+        </div>
+        <div>
           <Bold>TODO ESTUDO</Bold>. Fome na África. Todo Estudo. Disponível em:
           <LinkFromPage>
             https://www.todoestudo.com.br/geografia/fome-na-africa.
           </LinkFromPage>
           Acesso em: 19 set. 2023.
-        </span>
-        <span>
+        </div>
+        <div>
           <Bold>WORLD FOOD PROGRAMME (WFP)</Bold>. Hunger Map. Disponível em:
           <LinkFromPage>https://hungermap.wfp.org/.</LinkFromPage> Acesso em: 19
           set. 2023.
-        </span>
+        </div>
       </Section>
 
       <Footer />

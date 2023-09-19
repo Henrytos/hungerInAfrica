@@ -3,7 +3,7 @@ export default function LinkFromPage({ children }) {
     <a
       href={children}
       target="_blank"
-      className="text-zinc-400 cursor-pointer "
+      className="text-zinc-400 cursor-pointer  "
     >
       {children}
     </a>
