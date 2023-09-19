@@ -1,11 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 html {
   scroll-behavior: smooth;
 }
-
+*{
+  font-family: 'Montserrat', sans-serif;
+}
 #linkMap {
   color: white;
   text-decoration: none;
@@ -38,5 +40,5 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../public/imgs/bg-home.jpg");
-  background-position: center;
+  background-position: bottom center;
 }

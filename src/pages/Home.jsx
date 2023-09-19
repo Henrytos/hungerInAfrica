@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import Section from "../components/Section";
 
 import { useState } from "react";
-import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
@@ -68,7 +67,7 @@ export default function Home() {
   return (
     <>
       <main id="start">
-        <Section className="bg-zinc-900/50 text-zinc-100 h-[80vh]  ">
+        <Section className="bg-zinc-900/50 text-zinc-100 h-[100vh]  ">
           <header
             className="flex justify-between items-center 
           bg-transparent h-20 "
@@ -92,11 +91,11 @@ export default function Home() {
             </nav>
           </header>
 
-          <main className=" h-full flex flex-col  gap-10 justify-center ">
+          <main className=" h-full flex flex-col  gap-10 justify-center items-center">
             <span className="font-medium text-5xl max-sm:text-4xl">
               FOME NA ÁFRICA
             </span>
-            <span className="w-full max-w-lg text-base">
+            <span className="w-full max-w-3xl text-2xl">
               A África é o continente que mais sofre com a escassez de
               alimentos. Segundo dados da FAO(Organização para a Alimentação e
               Agricultura a ONU- Organização das Nações Unidas), a fome atinge
