@@ -15,6 +15,8 @@ import {
   modalFive,
   modalSix,
 } from "./textModais";
+import Bold from "../components/Bold";
+import LinkFromPage from "../components/LinkFromPage";
 export default function Home() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -279,6 +281,58 @@ export default function Home() {
           />
         </div>
       </Section>
+      <Section className="bg-[#485342] text-zinc-50 flex flex-col gap-4 py-4 pt-8">
+        <span className="text-4xl font-semibold uppercase">
+          Referências Bibliográficas: <hr />
+        </span>
+        <span>
+          <Bold>MUNDO EDUCAÇÃO</Bold>. As Principais Causas da Fome na África.
+          Mundo Educação. Disponível em:
+          <LinkFromPage>
+            https://mundoeducacao.uol.com.br/geografia/as-principais-causas-fome-na-africa.htm.
+          </LinkFromPage>
+          Acesso em: 19 set. 2023.
+        </span>
+
+        <span>
+          <Bold>TODA MATÉRIA</Bold>. Fome na África. Toda Matéria. Disponível
+          em:{" "}
+          <LinkFromPage>
+            https://www.todamateria.com.br/fome-na-africa/
+          </LinkFromPage>
+          . Acesso em: 19 set. 2023.
+        </span>
+        <span>
+          <Bold>BRASIL ESCOLA</Bold>. Conflitos na África. Brasil Escola.
+          Disponível em:
+          <LinkFromPage>
+            https://brasilescola.uol.com.br/geografia/conflitos-na-africa.htm.
+          </LinkFromPage>
+          Acesso em: 19 set. 2023.
+        </span>
+        <span>
+          <Bold>VALOR ECONÔMICO</Bold>. África pode perder até 15% do PIB por
+          mudanças climáticas, diz Banco de Desenvolvimento. Valor Econômico.
+          Disponível em:
+          <LinkFromPage>
+            https://valor.globo.com/mundo/noticia/2022/09/13/africa-pode-perder-ate-15percent-do-pib-por-mudancas-climaticas-diz-banco-de-desenvolvimento.ghtml
+          </LinkFromPage>
+          Acesso em: 19 set. 2023.
+        </span>
+        <span>
+          <Bold>TODO ESTUDO</Bold>. Fome na África. Todo Estudo. Disponível em:
+          <LinkFromPage>
+            https://www.todoestudo.com.br/geografia/fome-na-africa.
+          </LinkFromPage>
+          Acesso em: 19 set. 2023.
+        </span>
+        <span>
+          <Bold>WORLD FOOD PROGRAMME (WFP)</Bold>. Hunger Map. Disponível em:
+          <LinkFromPage>https://hungermap.wfp.org/.</LinkFromPage> Acesso em: 19
+          set. 2023.
+        </span>
+      </Section>
+
       <Footer />
 
       <Modal show={show} onHide={handleClose} animation={false}>
@@ -294,7 +348,7 @@ export default function Home() {
             className="m-auto max-w-xs w-full object-cover h-80"
           />
           <div className="flex flex-col gap-2">
-            {targetModal.text.map((text) => (
+            {targetModal.text.map((text, i) => (
               <span>{text}</span>
             ))}
           </div>
