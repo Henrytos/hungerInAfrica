@@ -74,7 +74,7 @@ export default function Home() {
           >
             <img
               src="/imgs/logoTipo.png"
-              className="h-full -translate-x-[10%] translate-y-4"
+              className="h-32 -translate-x-[10%] translate-y-4"
               alt="logo do site"
             />
             <nav className="flex gap-4 items-center">
@@ -86,7 +86,7 @@ export default function Home() {
                 id="idioma"
                 className="cursor-pointer p-2 rounded-md bg-transparent text-sm"
               >
-                <option value="idioma">PT</option>
+                <option value="idioma">PT-BR</option>
               </select>
             </nav>
           </header>
@@ -102,9 +102,9 @@ export default function Home() {
               ao menos 236 milhões de pessoas.
             </span>
             <Link
-              className="text-center  max-w-[8rem] text-sm
+              className="text-center  w-[8rem] text-sm
           py-3 border-2 border-zinc-100  rounded-lg
-          hover:bg-zinc-100 hover:text-zinc-900 transition-colors
+          hover:bg-zinc-100 hover:text-[#485342] transition-colors
           "
               to="/hungerMap"
               id="btnStart"
@@ -116,7 +116,7 @@ export default function Home() {
       </main>
 
       <Section className="bg-[#485342] text-zinc-50">
-        <div className="flex gap-10 items-center h-[60vh] max-lg:flex-col max-lg:py-4 max-lg:h-auto">
+        <div className="flex justify-center gap-10 items-center h-[60vh] max-lg:flex-col max-lg:py-4 max-lg:h-auto">
           <img
             src="https://images.unsplash.com/photo-1543180930-261980d4868a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1356&q=80"
             alt=""
@@ -158,7 +158,7 @@ export default function Home() {
           OUTRAS CAUSAS
         </span>
         <main className="grid grid-cols-3 gap-x-4 gap-y-8 max-lg:grid-cols-2 max-sm:grid-cols-1">
-          <div className="flex flex-col  gap-4">
+          <div className="flex flex-col  gap-4 items-center">
             <img
               src="/imgs/colonizacao-africa.jpg"
               alt="image do processo colonial"
@@ -180,7 +180,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="flex flex-col  gap-4">
+          <div className="flex flex-col  gap-4 items-center">
             <img
               src="/imgs/condicoeCLimaticas.jpg"
               alt="image do processo colonial"
@@ -203,7 +203,7 @@ export default function Home() {
               VER MAIS
             </a>
           </div>
-          <div className="flex flex-col  gap-4">
+          <div className="flex flex-col  gap-4 items-center">
             <img
               src="/imgs/cdp.jpg"
               alt="image do processo colonial"
@@ -226,7 +226,7 @@ export default function Home() {
               VER MAIS
             </a>
           </div>
-          <div className="flex flex-col  gap-4">
+          <div className="flex flex-col  gap-4 items-center">
             <img
               src="/imgs/corrupcaoNaAfrica.jpg"
               alt="image do processo colonial"
@@ -251,7 +251,7 @@ export default function Home() {
               VER MAIS
             </a>
           </div>
-          <div className="flex flex-col  gap-4">
+          <div className="flex flex-col  gap-4 items-center">
             <img
               src="/imgs/agricultura na africa.avif"
               className="w-full max-w-xs max-sm:block max-sm:m-auto object-cover h-72"
@@ -273,7 +273,7 @@ export default function Home() {
               VER MAIS
             </a>
           </div>
-          <div className="flex flex-col  gap-4">
+          <div className="flex flex-col  gap-4 items-center">
             <img
               src="/imgs/aumentoPolicional.jpg"
               alt="image do processo colonial"
@@ -300,7 +300,7 @@ export default function Home() {
         </main>
       </Section>
       <Section className="bg-[#485342] text-zinc-50">
-        <div className="flex gap-10 items-center h-[60vh] max-lg:flex-col max-lg:py-4 max-lg:h-[100vh]">
+        <div className="flex  justify-center gap-10 items-center h-[60vh] max-lg:flex-col max-lg:py-4 max-lg:h-[100vh]">
           <div className="w-full max-w-sm text-base flex flex-col  gap-4 max-lg:max-w-[80%] max-sm:max-w-full">
             <span className="text-4xl font-semibold">SOLUÇÕES:</span>
             <span>
