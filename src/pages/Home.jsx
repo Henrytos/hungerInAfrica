@@ -339,17 +339,16 @@ export default function Home() {
 
           <div>
             <Bold>TODA MATÉRIA</Bold>. Fome na África. Toda Matéria. Disponível
-            em:{" "}
+            em:
             <LinkFromPage>
               https://www.todamateria.com.br/fome-na-africa/.
-            </LinkFromPage>{" "}
+            </LinkFromPage>
             Acesso em: 19 set. 2023.
           </div>
           <div>
             <Bold>BRASIL ESCOLA</Bold>. Conflitos na África. Brasil Escola.
             Disponível em:
             <LinkFromPage>
-              {" "}
               https://brasilescola.uol.com.br/geografia/conflitos-na-africa.htm.
             </LinkFromPage>
             Acesso em: 19 set. 2023.
@@ -359,17 +358,16 @@ export default function Home() {
             mudanças climáticas, diz Banco de Desenvolvimento. Valor Econômico.
             Disponível em:
             <LinkFromPage>
-              {" "}
               https://valor.globo.com/mundo/noticia/2022/09/13/africa-pode-perder-ate-15percent-do-pib-por-mudancas-climaticas-diz-banco-de-desenvolvimento.ghtml
             </LinkFromPage>
             Acesso em: 19 set. 2023.
           </div>
           <div>
             <Bold>TODO ESTUDO</Bold>. Fome na África. Todo Estudo. Disponível
-            em:{" "}
+            em:
             <LinkFromPage>
               https://www.todoestudo.com.br/geografia/fome-na-africa.
-            </LinkFromPage>{" "}
+            </LinkFromPage>
             Acesso em: 19 set. 2023.
           </div>
           <div>
