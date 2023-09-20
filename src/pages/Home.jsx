@@ -278,10 +278,10 @@ export default function Home() {
       <Section className="bg-[#485342] text-zinc-50">
         <div className="flex justify-center gap-10 items-center h-[60vh] max-lg:flex-col max-lg:py-4 max-lg:h-auto">
           <div className="w-full max-w-sm text-base flex flex-col  gap-4 max-lg:max-w-[80%] max-sm:max-w-full">
-            <span className="text-4xl font-semibold">CAUSAS:</span>
+            <span className="text-4xl font-semibold uppercase">Soluções:</span>
             <span>
               Uma administração correta, incentivo à agricultura familiar e a
-              universalização do alimento se tornam fatores primordiais. As
+              universalização do alimento se tornam fatores primordiais. As
               condições atuais de distribuição de terras e governos com
               conflitos étnicos impedem esse desenvolvimento. Pois além das
               ONG’s, o Estado precisa engajar e investir nas rendas familiares,
