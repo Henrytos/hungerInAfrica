@@ -19,8 +19,14 @@ import Bold from "../components/Bold";
 import LinkFromPage from "../components/LinkFromPage";
 export default function Home() {
   const [show, setShow] = useState(false);
+  const [show2, setShow2] = useState(false);
   const handleClose = () => setShow(false);
+
   const handleShow = () => setShow(true);
+
+  const handleShow2 = () => setShow2(true);
+
+  const handleClose2 = () => setShow2(false);
 
   const [targetModal, setTargetModal] = useState(modalOne);
 
@@ -30,7 +36,7 @@ export default function Home() {
         <Section className="bg-zinc-900/50 text-zinc-100 h-[100vh]  ">
           <header
             className="flex justify-between items-center 
-          bg-transparent h-20 "
+          bg-transparent h-20 max-sm:flex-col max-sm:justify-center"
           >
             <img
               src="/imgs/logoTipo.png"
@@ -41,6 +47,15 @@ export default function Home() {
               <Link to="/hungerMap" className="text-sm" id="linkMap">
                 MAPA
               </Link>
+              <span
+                className="text-sm uppercase cursor-pointer"
+                id="linkMap"
+                onClick={() => {
+                  handleShow2();
+                }}
+              >
+                referências
+              </span>
               <select
                 name="idioma"
                 id="idioma"
@@ -259,10 +274,11 @@ export default function Home() {
           </div>
         </main>
       </Section>
+
       <Section className="bg-[#485342] text-zinc-50">
-        <div className="flex  justify-center gap-10 items-center h-[60vh] max-lg:flex-col max-lg:py-4 max-lg:h-[100vh]">
-          <div className="w-full max-w-sm text-base flex flex-col  gap-4 max-lg:max-w-[80%] max-sm:max-w-full ">
-            <span className="text-4xl font-semibold">SOLUÇÕES:</span>
+        <div className="flex justify-center gap-10 items-center h-[60vh] max-lg:flex-col max-lg:py-4 max-lg:h-auto">
+          <div className="w-full max-w-sm text-base flex flex-col  gap-4 max-lg:max-w-[80%] max-sm:max-w-full">
+            <span className="text-4xl font-semibold">CAUSAS:</span>
             <span>
               Uma administração correta, incentivo à agricultura familiar e a
               universalização do alimento se tornam fatores primordiais. As
@@ -279,57 +295,6 @@ export default function Home() {
             alt=""
             className="h-full w-[50%] object-cover max-lg:w-[80%] max-sm:w-[100%]"
           />
-        </div>
-      </Section>
-      <Section className="bg-[#485342] text-zinc-50 flex flex-col gap-4 py-4 pt-8">
-        <span className="text-4xl font-semibold uppercase">
-          Referências Bibliográficas: <hr />
-        </span>
-        <div>
-          <Bold>MUNDO EDUCAÇÃO</Bold>. As Principais Causas da Fome na África.
-          Mundo Educação. Disponível em:
-          <LinkFromPage>
-            https://mundoeducacao.uol.com.br/geografia/as-principais-causas-fome-na-africa.htm.
-          </LinkFromPage>
-          Acesso em: 19 set. 2023.
-        </div>
-
-        <div>
-          <Bold>TODA MATÉRIA</Bold>. Fome na África. Toda Matéria. Disponível
-          em:{" "}
-          <LinkFromPage>
-            https://www.todamateria.com.br/fome-na-africa/
-          </LinkFromPage>
-          . Acesso em: 19 set. 2023.
-        </div>
-        <div>
-          <Bold>BRASIL ESCOLA</Bold>. Conflitos na África. Brasil Escola.
-          Disponível em:
-          <LinkFromPage>
-            https://brasilescola.uol.com.br/geografia/conflitos-na-africa.htm.
-          </LinkFromPage>
-          Acesso em: 19 set. 2023.
-        </div>
-        <div>
-          <Bold>VALOR ECONÔMICO</Bold>. África pode perder até 15% do PIB por
-          mudanças climáticas, diz Banco de Desenvolvimento. Valor Econômico.
-          Disponível em:
-          <LinkFromPage>
-            https://valor.globo.com/mundo/noticia/2022/09/13/africa-pode-perder-ate-15percent-do-pib-por-mudancas-climaticas-diz-banco-de-desenvolvimento.ghtml
-          </LinkFromPage>
-          Acesso em: 19 set. 2023.
-        </div>
-        <div>
-          <Bold>TODO ESTUDO</Bold>. Fome na África. Todo Estudo. Disponível em:
-          <LinkFromPage>
-            https://www.todoestudo.com.br/geografia/fome-na-africa.
-          </LinkFromPage>
-          Acesso em: 19 set. 2023.
-        </div>
-        <div>
-          <Bold>WORLD FOOD PROGRAMME (WFP)</Bold>. Hunger Map. Disponível em:
-          <LinkFromPage>https://hungermap.wfp.org/.</LinkFromPage> Acesso em: 19
-          set. 2023.
         </div>
       </Section>
 
@@ -351,6 +316,66 @@ export default function Home() {
             {targetModal.text.map((text, i) => (
               <span>{text}</span>
             ))}
+          </div>
+        </Modal.Body>
+      </Modal>
+      <Modal show={show2} onHide={handleClose2} animation={false}>
+        <Modal.Header closeButton>
+          <Modal.Title>
+            <span className="text-2xl font-semibold uppercase text-[#485342]">
+              Referências Bibliográficas:
+            </span>
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body className="flex flex-col gap-4">
+          <div>
+            <Bold>MUNDO EDUCAÇÃO</Bold>. As Principais Causas da Fome na África.
+            Mundo Educação. Disponível em:
+            <LinkFromPage>
+              https://mundoeducacao.uol.com.br/geografia/as-principais-causas-fome-na-africa.htm.
+            </LinkFromPage>
+            Acesso em: 19 set. 2023.
+          </div>
+
+          <div>
+            <Bold>TODA MATÉRIA</Bold>. Fome na África. Toda Matéria. Disponível
+            em:{" "}
+            <LinkFromPage>
+              https://www.todamateria.com.br/fome-na-africa/.
+            </LinkFromPage>{" "}
+            Acesso em: 19 set. 2023.
+          </div>
+          <div>
+            <Bold>BRASIL ESCOLA</Bold>. Conflitos na África. Brasil Escola.
+            Disponível em:
+            <LinkFromPage>
+              {" "}
+              https://brasilescola.uol.com.br/geografia/conflitos-na-africa.htm.
+            </LinkFromPage>
+            Acesso em: 19 set. 2023.
+          </div>
+          <div>
+            <Bold>VALOR ECONÔMICO</Bold>. África pode perder até 15% do PIB por
+            mudanças climáticas, diz Banco de Desenvolvimento. Valor Econômico.
+            Disponível em:
+            <LinkFromPage>
+              {" "}
+              https://valor.globo.com/mundo/noticia/2022/09/13/africa-pode-perder-ate-15percent-do-pib-por-mudancas-climaticas-diz-banco-de-desenvolvimento.ghtml
+            </LinkFromPage>
+            Acesso em: 19 set. 2023.
+          </div>
+          <div>
+            <Bold>TODO ESTUDO</Bold>. Fome na África. Todo Estudo. Disponível
+            em:{" "}
+            <LinkFromPage>
+              https://www.todoestudo.com.br/geografia/fome-na-africa.
+            </LinkFromPage>{" "}
+            Acesso em: 19 set. 2023.
+          </div>
+          <div>
+            <Bold>WORLD FOOD PROGRAMME (WFP)</Bold>. Hunger Map. Disponível em:
+            <LinkFromPage>https://hungermap.wfp.org/.</LinkFromPage> Acesso em:
+            19 set. 2023.
           </div>
         </Modal.Body>
       </Modal>
