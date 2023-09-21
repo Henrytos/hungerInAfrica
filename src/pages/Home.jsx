@@ -66,11 +66,11 @@ export default function Home() {
             </nav>
           </header>
 
-          <main className=" h-full flex flex-col  gap-10 justify-center items-center">
-            <span className="font-medium text-5xl max-sm:text-4xl">
+          <main className=" py-[20vh] flex flex-col items-center gap-8">
+            <span className="font-medium text-5xl max-sm:text-3xl">
               FOME NA ÁFRICA
             </span>
-            <span className="w-full max-w-3xl text-2xl">
+            <span className=" text-center max-sm:text-base text-lg">
               A África é o continente que mais sofre com a escassez de
               alimentos. Segundo dados da FAO(Organização para a Alimentação e
               Agricultura a ONU- Organização das Nações Unidas), a fome atinge
@@ -91,11 +91,11 @@ export default function Home() {
       </main>
 
       <Section className="bg-[#485342] text-zinc-50">
-        <div className="flex justify-center gap-10 items-center h-[60vh] max-lg:flex-col max-lg:py-4 max-lg:h-auto">
+        <div className="flex gap-4 flex-wrap max-lg:justify-center items-center">
           <img
             src="https://images.unsplash.com/photo-1543180930-261980d4868a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1356&q=80"
             alt=""
-            className="h-full w-[50%] object-cover max-lg:w-[80%] max-sm:w-[100%]"
+            className="h-full w-[50%] object-cover max-lg:w-[70%] max-sm:w-[100%]"
           />
           <div className="w-full max-w-sm text-base flex flex-col  gap-4 max-lg:max-w-[80%] max-sm:max-w-full">
             <span className="text-4xl font-semibold">CAUSAS:</span>
@@ -276,7 +276,7 @@ export default function Home() {
       </Section>
 
       <Section className="bg-[#485342] text-zinc-50">
-        <div className="flex justify-center gap-10 items-center h-[60vh] max-lg:flex-col max-lg:py-4 max-lg:h-auto">
+        <div className="flex gap-4 flex-wrap max-lg:justify-center items-center">
           <div className="w-full max-w-sm text-base flex flex-col  gap-4 max-lg:max-w-[80%] max-sm:max-w-full">
             <span className="text-4xl font-semibold uppercase">Soluções:</span>
             <span>
@@ -293,7 +293,7 @@ export default function Home() {
           <img
             src="/imgs/mulherAfricana.jpg"
             alt=""
-            className="h-full w-[50%] object-cover max-lg:w-[80%] max-sm:w-[100%]"
+            className="h-full w-[50%] object-cover max-lg:w-[70%] max-sm:w-[100%]"
           />
         </div>
       </Section>
