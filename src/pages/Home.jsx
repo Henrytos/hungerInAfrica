@@ -70,7 +70,7 @@ export default function Home() {
             <span className="font-medium text-5xl max-sm:text-3xl">
               FOME NA ÁFRICA
             </span>
-            <span className=" text-center max-sm:text-base text-lg">
+            <span className=" text-center max-sm:text-base text-lg max-w-5xl">
               A África é o continente que mais sofre com a escassez de
               alimentos. Segundo dados da FAO(Organização para a Alimentação e
               Agricultura a ONU- Organização das Nações Unidas), a fome atinge
@@ -91,7 +91,7 @@ export default function Home() {
       </main>
 
       <Section className="bg-[#485342] text-zinc-50">
-        <div className="flex gap-4 flex-wrap max-lg:justify-center items-center">
+        <div className="flex gap-4 flex-wrap justify-center items-center">
           <img
             src="https://images.unsplash.com/photo-1543180930-261980d4868a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1356&q=80"
             alt=""
@@ -276,7 +276,7 @@ export default function Home() {
       </Section>
 
       <Section className="bg-[#485342] text-zinc-50">
-        <div className="flex gap-4 flex-wrap max-lg:justify-center items-center">
+        <div className="flex gap-4 flex-wrap justify-center items-center">
           <div className="w-full max-w-sm text-base flex flex-col  gap-4 max-lg:max-w-[80%] max-sm:max-w-full">
             <span className="text-4xl font-semibold uppercase">Soluções:</span>
             <span>
